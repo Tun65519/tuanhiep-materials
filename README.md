@@ -4,63 +4,61 @@
 
   <header>
     <h1>Tuấn Hiệp Materials</h1>
-    <p>Chuyên cung cấp vật liệu xây dựng uy tín, chất lượng</p>
-    <nav>
-      <a href="#about">Giới thiệu</a>
-      <a href="#products">Sản phẩm</a>
-      <a href="#contact">Liên hệ</a>
-    </nav>
+    <p>Chuyên cung cấp vật liệu xây dựng chất lượng</p>
   </header>
 
-  <div class="hero">
-    <img src="https://images.unsplash.com/photo-1600359754553-0e98f48bfe5b" alt="Banner Tuấn Hiệp Materials" />
-  </div>
-
-  <div class="content">
-    <div class="section" id="about">
-      <h2>Về Chúng Tôi</h2>
-      <p>Tuấn Hiệp Materials là đơn vị hàng đầu trong lĩnh vực cung cấp vật liệu xây dựng tại Việt Nam, với hơn 10 năm kinh nghiệm và mạng lưới đối tác rộng khắp.</p>
-    </div>
-
-    <div class="section" id="products">
-      <h2>Sản Phẩm</h2>
-      <div class="products-grid">
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1597764691313-bf6e7b5e5b59" alt="Thép xây dựng">
-          <p>Thép xây dựng</p>
-        </div>
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1603566171673-cbce1ff95c3a" alt="Xi măng các loại">
-          <p>Xi măng các loại</p>
-        </div>
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1636819489845-d14978ef216e" alt="Gạch ốp lát">
-          <p>Gạch, đá ốp lát</p>
-        </div>
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1582560471412-fd7a59309a5b" alt="Cát đá xây dựng">
-          <p>Cát, đá xây dựng</p>
-        </div>
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1624624078863-8e841aad1e4d" alt="Vật liệu hoàn thiện">
-          <p>Vật liệu hoàn thiện</p>
-        </div>
+  <div class="container">
+    <h2>Sản phẩm nổi bật</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1597764691313-bf6e7b5e5b59" alt="Thép xây dựng">
+        <h3>Thép xây dựng</h3>
+        <p>Giá: 15,000đ/kg</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1603566171673-cbce1ff95c3a" alt="Xi măng">
+        <h3>Xi măng Nghi Sơn</h3>
+        <p>Giá: 85,000đ/bao</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1636819489845-d14978ef216e" alt="Gạch ốp lát">
+        <h3>Gạch ốp lát cao cấp</h3>
+        <p>Giá: 180,000đ/m²</p>
       </div>
     </div>
 
-    <div class="section" id="contact">
-      <h2>Liên Hệ</h2>
-      <p>📍 Địa chỉ: Số 123 Đường Lớn, Quận 5, TP.HCM</p>
-      <p>📞 Điện thoại: 0909 123 456</p>
-      <p>📧 Email: lienhe@tuanhiepmaterials.vn</p>
-      <a href="mailto:lienhe@tuanhiepmaterials.vn" class="button">Gửi Email</a><br>
-      <img src="https://images.unsplash.com/photo-1581091012184-7c02e6e1f0bc" alt="Bản đồ hoặc văn phòng" class="contact-img" />
+    <div class="order-form">
+      <h2>Đặt hàng ngay</h2>
+      <form action="mailto:lienhe@tuanhiepmaterials.vn" method="post" enctype="text/plain">
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="Họ tên" required />
+
+        <label for="phone">Số điện thoại:</label>
+        <input type="tel" id="phone" name="Số điện thoại" required />
+
+        <label for="product">Chọn sản phẩm:</label>
+        <select id="product" name="Sản phẩm">
+          <option value="Thép xây dựng">Thép xây dựng</option>
+          <option value="Xi măng Nghi Sơn">Xi măng Nghi Sơn</option>
+          <option value="Gạch ốp lát">Gạch ốp lát cao cấp</option>
+        </select>
+
+        <label for="quantity">Số lượng:</label>
+        <input type="number" id="quantity" name="Số lượng" required />
+
+        <label for="message">Ghi chú thêm:</label>
+        <textarea id="message" name="Ghi chú" rows="4"></textarea>
+
+        <button type="submit">Gửi đơn hàng</button>
+      </form>
     </div>
   </div>
-
+ <p>📍 Địa chỉ: Làng Châm, iagrai, Gia Lai, Việt Nam </p>
   <footer>
-    &copy; 2025 Tuấn Hiệp Materials. All rights reserved.
+    &copy; 2025 Tuấn Hiệp Materials. Hotline: 083 797 8279
   </footer>
 
 </body>
 </html>
+
+
