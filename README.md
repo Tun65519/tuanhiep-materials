@@ -1,4 +1,24 @@
-   <body class="bg-gray-100 text-gray-800">
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuấn Hiệp Materials</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1e3a8a',
+              secondary: '#e5e7eb'
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
     <!-- Header -->
     <header class="bg-white shadow p-4 flex justify-between items-center">
       <div class="flex items-center gap-2">
@@ -6,8 +26,24 @@
         <h1 class="text-2xl font-bold text-primary">Tuấn Hiệp Materials</h1>
       </div>
       <div class="flex items-center gap-4">
-        <a href="#products" class="hover:underline">0837978279</strong></p>
-        <p>Email: <strong class="text-primary">tuanhiep@gmail.com</strong></p>
+        <a href="#products" class="hover:underline">Sản phẩm</a>
+        <a href="#contact" class="hover:underline">Liên hệ</a>
+        <button onclick="toggleCart()" class="relative">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4" />
+          </svg>
+          <span id="cartCount" class="absolute -top-2 -right-2 bg-red-500 text-white rounded-full px-1 text-xs">0</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="mt-4">
+      <img src="https://via.placeholder.com/1200x400?text=Banner+San+Pham" class="w-full rounded" alt="Banner">
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="py-10 px-4lastfire65519a@gmail.com</strong></p>
         <p>Địa chỉ: Làng Châm, Iagrai, Gia Lai.</p>
       </div>
     </section>
@@ -32,9 +68,9 @@
     <!-- Scripts -->
     <script>
       const products = [
-        { id: 1, name: "Xi măng Nghi Sơn", desc: "Bao 50kg", <img src="7ad4da31-2338-4468-82a1-6357d78ddc95.png" alt="Xi măng Nghi Sơn" class="rounded mb-2 w-full">, price: 115.000 },
+        { id: 1, name: "Xi măng Hà Tiên", desc: "Bao 50kg", image: "https://via.placeholder.com/300x200", price: 75000 },
         { id: 2, name: "Gạch Tuynel", desc: "100 viên/lô", image: "https://via.placeholder.com/300x200", price: 120000 },
-        { id: 3, name: "Cát xây dựng", desc: "1 khối", image: "https://via.placeholder.com/300x200", price: 400.000 },
+        { id: 3, name: "Cát xây dựng", desc: "1 khối", image: "https://via.placeholder.com/300x200", price: 95000 },
       ];
 
       const cart = [];
@@ -98,8 +134,4 @@
       renderProducts();
     </script>
   </body>
-
-
-
-
-
+</html>
