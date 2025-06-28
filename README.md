@@ -1,64 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuấn Hiệp Materials</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
 
-</head>
-<body>
+    <!-- Header -->
+    <header class="bg-white shadow p-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">Tuấn Hiệp Materials</h1>
+      <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Liên hệ đặt hàng</a>
+    </header>
 
-  <header>
-    <h1>Tuấn Hiệp Materials</h1>
-    <p>Chuyên cung cấp vật liệu xây dựng chất lượng</p>
-  </header>
+    <!-- Banner -->
+    <section class="mt-4">
+      <img src="https://via.placeholder.com/1200x400?text=Banner+San+Pham" class="w-full rounded" alt="Banner">
+    </section>
 
-  <div class="container">
-    <h2>Sản phẩm nổi bật</h2>
-    <div class="products">
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1597764691313-bf6e7b5e5b59" alt="Thép xây dựng">
-        <h3>Thép xây dựng</h3>
-        <p>Giá: 15,000đ/kg</p>
+    <!-- Sản phẩm -->
+    <section class="py-10 px-4 max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-center">Danh mục sản phẩm</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Sản phẩm mẫu -->
+        <div class="bg-white shadow rounded p-4">
+          <img src="https://via.placeholder.com/300x200" alt="Sản phẩm 1" class="rounded mb-2">
+          <h3 class="text-xl font-semibold">Sản phẩm 1</h3>
+          <p class="text-gray-600">Mô tả ngắn gọn sản phẩm.</p>
+        </div>
+        <div class="bg-white shadow rounded p-4">
+          <img src="https://via.placeholder.com/300x200" alt="Sản phẩm 2" class="rounded mb-2">
+          <h3 class="text-xl font-semibold">Sản phẩm 2</h3>
+          <p class="text-gray-600">Mô tả ngắn gọn sản phẩm.</p>
+        </div>
+        <div class="bg-white shadow rounded p-4">
+          <img src="https://via.placeholder.com/300x200" alt="Sản phẩm 3" class="rounded mb-2">
+          <h3 class="text-xl font-semibold">Sản phẩm 3</h3>
+          <p class="text-gray-600">Mô tả ngắn gọn sản phẩm.</p>
+        </div>
       </div>
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1603566171673-cbce1ff95c3a" alt="Xi măng">
-        <h3>Xi măng Nghi Sơn</h3>
-        <p>Giá: 85,000đ/bao</p>
+    </section>
+
+    <!-- Liên hệ -->
+    <section id="contact" class="bg-blue-50 py-10 px-4">
+      <div class="max-w-xl mx-auto text-center">
+        <h2 class="text-2xl font-bold mb-4">Liên hệ đặt hàng</h2>
+        <p class="mb-4">Gọi ngay: <strong class="text-blue-600">0909 999 999</strong></p>
+        <p>Email: <strong class="text-blue-600">tuanhiep@gmail.com</strong></p>
+        <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP.HCM</p>
       </div>
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1636819489845-d14978ef216e" alt="Gạch ốp lát">
-        <h3>Gạch ốp lát cao cấp</h3>
-        <p>Giá: 180,000đ/m²</p>
-      </div>
-    </div>
+    </section>
 
-    <div class="order-form">
-      <h2>Đặt hàng ngay</h2>
-      <form action="mailto:lienhe@tuanhiepmaterials.vn" method="post" enctype="text/plain">
-        <label for="name">Họ và tên:</label>
-        <input type="text" id="name" name="Họ tên" required />
+    <!-- Footer -->
+    <footer class="bg-gray-200 text-center p-4 mt-10 text-sm">
+      &copy; 2025 Tuấn Hiệp Materials. All rights reserved.
+    </footer>
 
-        <label for="phone">Số điện thoại:</label>
-        <input type="tel" id="phone" name="Số điện thoại" required />
+  </body>
+</html>
 
-        <label for="product">Chọn sản phẩm:</label>
-        <select id="product" name="Sản phẩm">
-          <option value="Thép xây dựng">Thép xây dựng</option>
-          <option value="Xi măng Nghi Sơn">Xi măng Nghi Sơn</option>
-          <option value="Gạch ốp lát">Gạch ốp lát cao cấp</option>
-        </select>
-
-        <label for="quantity">Số lượng:</label>
-        <input type="number" id="quantity" name="Số lượng" required />
-
-        <label for="message">Ghi chú thêm:</label>
-        <textarea id="message" name="Ghi chú" rows="4"></textarea>
-
-        <button type="submit">Gửi đơn hàng</button>
-      </form>
-    </div>
-  </div>
  <p>📍 Địa chỉ: Làng Châm, iagrai, Gia Lai, Việt Nam </p>
   <footer>
     &copy; 2025 Tuấn Hiệp Materials. Hotline: 083 797 8279
   </footer>
 
 </body>
-</html>
 
 
