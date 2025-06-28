@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
@@ -36,13 +36,7 @@
         </button>
       </div>
     </header>
-
-    <!-- Banner -->
-    <section class="mt-4">
-      <img src="https://via.placeholder.com/1200x400?text=Banner+San+Pham" class="w-full rounded" alt="Banner">
-    </section>
-
-    <!-- Products -->
+  <!PRODUCTS>
     <section id="products" class="py-10 px-4lastfire65519a@gmail.com</strong></p>
         <p>Địa chỉ: Làng Châm, Iagrai, Gia Lai.</p>
       </div>
